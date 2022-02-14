@@ -9,12 +9,13 @@ def stock_picker(x)
         sum = elem_2 - element
         if sum > profit
           profit = sum
+          best[0] = index
+          best[1] = ind_2
         end
       end
     end
   end
-  print best
-  print profit
+  puts best.to_s  
 end
 
 stock_picker(stock_array)
